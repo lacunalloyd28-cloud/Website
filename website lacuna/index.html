@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>De La Salle John Bosco College - Bislig</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body data-theme="light">
+
+    <!-- ===== SCROLL PROGRESS BAR ===== -->
+    <div class="scroll-progress" id="scrollProgress"></div>
+
+    <!-- ===== LOADING SCREEN ===== -->
+    <div id="loader">
+        <svg class="loader-shield" viewBox="0 0 100 120" width="60" height="72">
+            <path d="M50 4 L94 20 V56 C94 90 74 108 50 116 C26 108 6 90 6 56 V20 Z" fill="none" stroke="#d4af37"
+                stroke-width="3" />
+            <path d="M50 4 L94 20 V56 C94 90 74 108 50 116 C26 108 6 90 6 56 V20 Z" fill="none" stroke="#ffffff"
+                stroke-width="1.5" class="shield-trace" />
+            <path d="M50 28 V96 M28 62 H72" stroke="#ffffff" stroke-width="4" stroke-linecap="round" />
+        </svg>
+        <div class="loader-bar">
+            <div class="loader-fill"></div>
+        </div>
+        <span class="loader-text">DE LA SALLE JOHN BOSCO COLLEGE</span>
+    </div>
+
+    <!-- ===== HEADER ===== -->
+    <header class="site-header">
+        <div class="header-inner">
+            <a href="#home" class="brand tab-link" data-tab="home">
+                <img src="https://static.wixstatic.com/media/bd91d4_584584173a0c444ab9255b9313caa658~mv2.png"
+                    alt="DLSJBC Logo" class="logo">
+                <span class="brand-text">
+                    <strong>De La Salle John Bosco College</strong>
+                    <small>Mangagoy &middot; Bislig City &middot; Est. 1963</small>
+                </span>
+            </a>
+
+            <nav class="main-nav">
+                <ul class="tabs">
+                    <li><a href="#home" class="tab-link active" data-tab="home">Home</a></li>
+                    <li><a href="#admissions" class="tab-link" data-tab="admissions">Admissions</a></li>
+                    <li><a href="#about" class="tab-link" data-tab="about">About</a></li>
+                    <li><a href="#contact" class="tab-link" data-tab="contact">Contact</a></li>
+                    <li><a href="#articles" class="tab-link" data-tab="articles">Articles</a></li>
+                </ul>
+            </nav>
+
+            <div class="header-right">
+                <div class="icon-group">
+                    <a href="mailto:info@dlsjbc.edu.ph" class="icon-btn" aria-label="Email DLSJBC"
+                        title="info@dlsjbc.edu.ph">
+                        <svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <rect x="3" y="5" width="18" height="14" rx="2" />
+                            <path d="M3 7l9 6 9-6" />
+                        </svg>
+                    </a>
+                    <a href="https://www.facebook.com/dlsjbc" target="_blank" rel="noopener" class="icon-btn"
+                        aria-label="DLSJBC Facebook" title="facebook.com/dlsjbc">
+                        <svg viewBox="0 0 24 24" width="17" height="17" fill="currentColor">
+                            <path
+                                d="M22 12.06C22 6.51 17.52 2 12 2S2 6.51 2 12.06c0 5 3.66 9.16 8.44 9.94v-7.03H7.9v-2.91h2.54V9.85c0-2.5 1.49-3.89 3.77-3.89 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56v1.88h2.78l-.44 2.91h-2.34V22c4.78-.78 8.44-4.94 8.44-9.94z" />
+                        </svg>
+                    </a>
+                </div>
+
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+                    <span class="toggle-knob">🌙</span>
+                </button>
+
+                <a href="#admissions" class="enroll-btn tab-link" data-tab="admissions">
+                    <span>Enroll Now</span>
+                    <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor"
+                        stroke-width="2.4">
+                        <path d="M5 12h14M13 6l6 6-6 6" />
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- ===== HOME TAB ===== -->
+    <section id="home" class="tab-content active">
+
+        <div class="hero">
+            <div class="hero-bg-shape"></div>
+            <div class="hero-bg-shape shape-2"></div>
+            <svg class="hero-watermark" viewBox="0 0 100 120">
+                <path d="M50 4 L94 20 V56 C94 90 74 108 50 116 C26 108 6 90 6 56 V20 Z" />
+            </svg>
+
+            <div class="hero-inner">
+                <div class="hero-text">
+                    <span class="badge"><span class="badge-dot"></span>PAASCU-Accredited &nbsp;&middot;&nbsp; Lasallian
+                        District School</span>
+                    <h1>Faith, Service<br>&amp; <em>Communion</em><br>since 1963.</h1>
+                    <p>De La Salle John Bosco College has formed generations of Lasallians in Mangagoy, Bislig City —
+                        from pre-school through college and TESDA-accredited TVET programs.</p>
+                    <div class="hero-actions">
+                        <a href="#admissions" class="btn btn-primary tab-link" data-tab="admissions">Enroll Now</a>
+                        <a href="#about" class="btn btn-ghost tab-link" data-tab="about">Discover Our Story</a>
+                    </div>
+                </div>
+
+                <div class="hero-media">
+                    <div class="img-zoom hero-img-wrap">
+                        <img src="https://static.wixstatic.com/media/bd91d4_787fcf328b134aacafdba4fa3e5e83fe~mv2.jpg"
+                            alt="DLSJBC Campus">
+                    </div>
+                    <div class="floating-card card-top">
+                        <span class="dot"></span>
+                        <div><strong>Admission Ongoing</strong><small>SY 2024–2025</small></div>
+                    </div>
+                    <div class="floating-card card-bottom">
+                        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="#d4af37" stroke-width="2">
+                            <path d="M12 2 L2 7 l10 5 10-5-10-5Z" />
+                            <path d="M2 17l10 5 10-5M2 12l10 5 10-5" />
+                        </svg>
+                        <div><strong>K–12 &amp; College</strong><small>Full Lasallian Formation</small></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="stat-strip">
+                <div class="stat"><strong>1963</strong><span>Year Founded</span></div>
+                <div class="stat"><strong>PAASCU</strong><span>Accredited Institution</span></div>
+                <div class="stat"><strong>18th</strong><span>District School, De La Salle PH</span></div>
+                <div class="stat"><strong>K–College</strong><span>Complete Programs</span></div>
+            </div>
+        </div>
+
+        <div class="section-block">
+            <div class="sec-heading">
+                <span class="eyebrow">Why DLSJBC</span>
+                <h2>A Legacy Built on Lasallian Values</h2>
+                <p class="sec-sub">Every Lasallian school is guided by the same mission — carried out here in Bislig
+                    since 1963.</p>
+            </div>
+            <div class="value-grid">
+                <div class="value-card">
+                    <div class="value-icon">✝</div>
+                    <h3>Faith</h3>
+                    <p>A Catholic institution rooted in Christian formation, guiding students in mind, heart, and
+                        spirit.</p>
+                </div>
+                <div class="value-card">
+                    <div class="value-icon">🤝</div>
+                    <h3>Service</h3>
+                    <p>Zeal for service to the poor and the young, carried forward through community and outreach work.
+                    </p>
+                </div>
+                <div class="value-card">
+                    <div class="value-icon">🕊</div>
+                    <h3>Communion</h3>
+                    <p>A shared mission among Brothers, faculty, students, and families — one Lasallian community.</p>
+                </div>
+                <div class="value-card">
+                    <div class="value-icon">🎓</div>
+                    <h3>Quality Education</h3>
+                    <p>Complete pre-school to college programs plus TESDA-accredited TVET pathways for every learner.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="section-block alt-bg">
+            <div class="sec-heading">
+                <span class="eyebrow">What's happening</span>
+                <h2>Latest News</h2>
+            </div>
+            <div class="card-grid">
+                <div class="news-card">
+                    <div class="img-zoom"><img
+                            src="https://static.wixstatic.com/media/c19ea6_b85655940b4d43fa92e380e30d446a5e~mv2.jpg"
+                            alt="Admission ongoing"><span class="tag">New</span></div>
+                    <div class="news-body">
+                        <span class="news-date">June 5, 2024</span>
+                        <h3>Admission for SY 2024–2025 Is Now Ongoing</h3>
+                        <p>Heads up, future Lasallian enthusiasts! DLSJBC is ready to open doors as admission for all
+                            levels begins.</p>
+                    </div>
+                </div>
+                <div class="news-card">
+                    <div class="img-zoom"><img
+                            src="https://static.wixstatic.com/media/c19ea6_c938fe1d14a2434a8bd3196546195c18~mv2.jpg"
+                            alt="Alumni Homecoming 2024"></div>
+                    <div class="news-body">
+                        <span class="news-date">May 6, 2024</span>
+                        <h3>Alumni Homecoming 2024</h3>
+                        <p>A night filled with nostalgia, laughter, and dancing as fellow Lasallians reunite once again.
+                        </p>
+                    </div>
+                </div>
+                <div class="news-card">
+                    <div class="img-zoom"><img
+                            src="https://static.wixstatic.com/media/c19ea6_fb8c347bbf59408790e400c1043420ae~mv2.jpg"
+                            alt="Science teachers benchmarking"></div>
+                    <div class="news-body">
+                        <span class="news-date">March 13, 2024</span>
+                        <h3>Committed to Excellence in Science Education</h3>
+                        <p>Our science teachers joined a benchmarking activity at CSU to bring back best classroom
+                            practices.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section-block">
+            <div class="sec-heading">
+                <span class="eyebrow">Mark your calendar</span>
+                <h2>Upcoming Activities</h2>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item"><span class="t-date">May 1</span><span class="t-desc">Labor Day</span></div>
+                <div class="timeline-item"><span class="t-date">May 4</span><span class="t-desc">HMTM Pinning
+                        Ceremony</span></div>
+                <div class="timeline-item"><span class="t-date">May 10</span><span class="t-desc">2nd Trimester Honors
+                        Convocation</span></div>
+                <div class="timeline-item"><span class="t-date">May 23</span><span class="t-desc">BED / SHS
+                        Baccalaureate Mass</span></div>
+                <div class="timeline-item"><span class="t-date">May 24</span><span class="t-desc">BED Completion Rites /
+                        SHS Commencement</span></div>
+                <div class="timeline-item"><span class="t-date">May 31</span><span class="t-desc">NSTP Graduation /
+                        Completion Ceremony</span></div>
+            </div>
+        </div>
+
+        <div class="cta-band">
+            <svg class="cta-watermark" viewBox="0 0 100 120">
+                <path d="M50 4 L94 20 V56 C94 90 74 108 50 116 C26 108 6 90 6 56 V20 Z" />
+            </svg>
+            <h2>Ready to write your next chapter?</h2>
+            <p>Choose your path and embrace your future as a Lasallian.</p>
+            <a href="#admissions" class="btn btn-light tab-link" data-tab="admissions">Enroll Now</a>
+        </div>
+
+    </section>
+
+    <!-- ===== ADMISSIONS TAB ===== -->
+    <section id="admissions" class="tab-content">
+        <div class="page-banner">
+            <span class="badge badge-light">Admissions</span>
+            <h1>Start Your Enrollment</h1>
+            <p>Review the requirements for your level, then follow the step-by-step process below.</p>
+            <a href="mailto:info@dlsjbc.edu.ph?subject=Enrollment Inquiry" class="btn btn-light">Email the Registrar</a>
+        </div>
+
+        <div class="section-block">
+            <div class="sec-heading"><span class="eyebrow">Requirements</span>
+                <h2>By Level</h2>
+            </div>
+            <div class="req-grid">
+                <div class="req-card">
+                    <h3>Nursery – Kindergarten</h3>
+                    <ul>
+                        <li>PSA Birth Certificate (1 photocopy)</li>
+                    </ul>
+                </div>
+                <div class="req-card">
+                    <h3>Grade 1</h3>
+                    <ul>
+                        <li>ECCD Checklist (original copy)</li>
+                        <li>PSA Birth Certificate (1 photocopy)</li>
+                    </ul>
+                </div>
+                <div class="req-card">
+                    <h3>Grade 2 – Grade 10</h3>
+                    <ul>
+                        <li>Report Card (Form 138-A)</li>
+                        <li>PSA Birth Certificate (1 photocopy)</li>
+                        <li>Certificate of Good Moral Character</li>
+                    </ul>
+                </div>
+                <div class="req-card">
+                    <h3>Grade 11 – Grade 12</h3>
+                    <ul>
+                        <li>Report Card (Form 138-A)</li>
+                        <li>Certificate of Good Moral Character</li>
+                        <li>Certificate of Completion in Junior High</li>
+                        <li>ESC Certificate (private school completers)</li>
+                    </ul>
+                </div>
+                <div class="req-card">
+                    <h3>Freshmen (College)</h3>
+                    <ul>
+                        <li>4 pcs 1x1 ID picture</li>
+                        <li>Drug test result</li>
+                        <li>Report Card (Form 138)</li>
+                        <li>Medical certificate</li>
+                        <li>PSA Birth Certificate</li>
+                        <li>Certificate of Good Moral Character</li>
+                        <li>Marriage contract (if married)</li>
+                    </ul>
+                </div>
+                <div class="req-card">
+                    <h3>Transferee (College)</h3>
+                    <ul>
+                        <li>TOR (evaluative copy)</li>
+                        <li>Honorable dismissal</li>
+                        <li>Certificate of Good Moral Character</li>
+                        <li>PSA Birth Certificate</li>
+                        <li>Medical certificate</li>
+                        <li>Drug test result</li>
+                        <li>4 pcs 1x1 ID picture</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="section-block alt-bg">
+            <div class="sec-heading"><span class="eyebrow">Process</span>
+                <h2>Enrollment Procedure</h2>
+            </div>
+            <div class="steps-grid">
+                <div class="step-card">
+                    <span class="step-num">01</span>
+                    <h3>New Kindergarten</h3>
+                    <ol>
+                        <li>See the Guidance-in-charge for the entrance exam / interview.</li>
+                        <li>Secure the Eligibility Form from the Principal's Office.</li>
+                        <li>Present PSA Birth Certificate and Eligibility Form to the Registrar.</li>
+                        <li>Proceed to the Finance Office for tuition leveling.</li>
+                        <li>Pay the enrollment fee at the cashier.</li>
+                        <li>Return to the Registrar's Office.</li>
+                    </ol>
+                </div>
+                <div class="step-card">
+                    <span class="step-num">02</span>
+                    <h3>New Grade 1 – Grade 12</h3>
+                    <ol>
+                        <li>Present admission requirements at the Registrar's Office.</li>
+                        <li>Secure and accomplish the Registration Form.</li>
+                        <li>Proceed to the Finance Office for tuition leveling.</li>
+                        <li>Pay the enrollment fee at the cashier.</li>
+                        <li>Return to the Registrar's Office.</li>
+                    </ol>
+                </div>
+                <div class="step-card">
+                    <span class="step-num">03</span>
+                    <h3>Continuing Students</h3>
+                    <ol>
+                        <li>Present original report card to the Registrar's Office.</li>
+                        <li>Secure and accomplish the Registration Form.</li>
+                        <li>Proceed to the Finance Office for tuition leveling.</li>
+                        <li>Pay the enrollment fee at the cashier.</li>
+                        <li>Return to the Registrar's Office.</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== ABOUT TAB ===== -->
+    <section id="about" class="tab-content">
+        <div class="page-banner">
+            <span class="badge badge-light">About Us</span>
+            <h1>A Lasallian Legacy Since 1963</h1>
+            <p>From a company-run elementary school to a full Lasallian district college.</p>
+        </div>
+
+        <div class="section-block about-flex">
+            <div class="img-zoom about-img-wrap">
+                <img src="https://static.wixstatic.com/media/bd91d4_551929a2108044e0a1f6f38d88108044~mv2.jpg"
+                    alt="DLSJBC Buildings and Facilities">
+            </div>
+            <div class="about-text">
+                <h2>Our History</h2>
+                <p>The De La Salle John Bosco College (DLSJBC) is a PAASCU-accredited Lasallian district school located
+                    in Mangagoy, Bislig City, Surigao del Sur. It was established in 1963 by the Don Bosco Fathers, and
+                    administration was formally turned over to the De La Salle Brothers in 1977.</p>
+                <p>The school traces its roots to the Bislig Bay Elementary School, founded in the mid-1950s for the
+                    dependents of the Bislig Bay Lumber Company Incorporated. It grew from John Bosco School into John
+                    Bosco College in 1999, and in 2007 was formally accepted as the 18th district school of De La Salle
+                    Philippines, taking on its present name.</p>
+                <p>Today, DLSJBC offers complete pre-school, basic education, senior high school, college, and
+                    TESDA-accredited TVET programs — serving as the leading Lasallian and Catholic institution in Bislig
+                    City and the CARAGA region.</p>
+            </div>
+        </div>
+
+        <div class="section-block alt-bg mission-vision">
+            <div class="mv-card">
+                <div class="mv-icon">🛡</div>
+                <h3>Our Identity</h3>
+                <p>DLSJBC's crest features a white shield with a tower and cross, symbolizing the school's Catholic
+                    identity, and the Chi-Rho in the upper corner as a sign of peace.</p>
+            </div>
+            <div class="mv-card">
+                <div class="mv-icon">🕊</div>
+                <h3>Lasallian Values</h3>
+                <p>Guided by the Lasallian mission of Faith, Service, and Communion, the school forms students
+                    holistically — academically, spiritually, and socially.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== CONTACT TAB ===== -->
+    <section id="contact" class="tab-content">
+        <div class="page-banner">
+            <span class="badge badge-light">Contact</span>
+            <h1>We'd Love to Hear From You</h1>
+            <p>Send us a message and we'll get back to you shortly.</p>
+        </div>
+
+        <div class="section-block contact-flex">
+            <div class="contact-info">
+                <h2>Get in Touch</h2>
+
+                <a href="https://www.google.com/maps?q=De+La+Salle+John+Bosco+College,+Mangagoy,+Bislig+City"
+                    target="_blank" rel="noopener" class="contact-row">
+                    <span class="contact-icon">📍</span>
+                    <div><strong>Address</strong>
+                        <p>De La Salle Drive, Mangagoy, Bislig City, Surigao del Sur, Philippines</p>
+                    </div>
+                </a>
+
+                <a href="mailto:info@dlsjbc.edu.ph" class="contact-row">
+                    <span class="contact-icon">✉️</span>
+                    <div><strong>Email</strong>
+                        <p>info@dlsjbc.edu.ph</p>
+                    </div>
+                </a>
+
+                <a href="tel:+63868533415" class="contact-row">
+                    <span class="contact-icon">📞</span>
+                    <div><strong>Phone</strong>
+                        <p>+63 86 853 3415</p>
+                    </div>
+                </a>
+
+                <a href="https://www.facebook.com/dlsjbc" target="_blank" rel="noopener" class="contact-row">
+                    <span class="contact-icon">👍</span>
+                    <div><strong>Facebook</strong>
+                        <p>facebook.com/dlsjbc</p>
+                    </div>
+                </a>
+
+                <form class="contact-form"
+                    onsubmit="alert('Thanks for submitting! We will get back to you shortly.'); return false;">
+                    <label>Email <input type="email" required placeholder="you@example.com"></label>
+                    <label>Subject <input type="text" required placeholder="Subject"></label>
+                    <label>Your Message <textarea rows="4" required
+                            placeholder="Type your message here..."></textarea></label>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+            </div>
+
+            <div class="map-wrap">
+                <iframe title="DLSJBC Location Map"
+                    src="https://www.google.com/maps?q=De+La+Salle+John+Bosco+College,+Mangagoy,+Bislig+City,+Surigao+del+Sur&output=embed"
+                    width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy">
+                </iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== ARTICLES TAB ===== -->
+    <section id="articles" class="tab-content">
+        <div class="page-banner">
+            <span class="badge badge-light">Articles</span>
+            <h1>News &amp; Announcements</h1>
+            <p>Stay updated with the latest happenings at DLSJBC.</p>
+        </div>
+
+        <div class="section-block">
+            <div class="card-grid">
+                <div class="news-card">
+                    <div class="img-zoom"><img
+                            src="https://static.wixstatic.com/media/c19ea6_b85655940b4d43fa92e380e30d446a5e~mv2.jpg"
+                            alt="Admission ongoing"></div>
+                    <div class="news-body">
+                        <span class="news-date">June 5, 2024</span>
+                        <h3>Admission for SY 2024–2025 Is Now Ongoing</h3>
+                        <p>DLSJBC opens its doors to all future Lasallian enthusiasts for admission across all levels.
+                        </p>
+                        <a href="https://www.facebook.com/dlsjbc" target="_blank" rel="noopener" class="read-more">Read
+                            more on Facebook →</a>
+                    </div>
+                </div>
+                <div class="news-card">
+                    <div class="img-zoom"><img
+                            src="https://static.wixstatic.com/media/c19ea6_c938fe1d14a2434a8bd3196546195c18~mv2.jpg"
+                            alt="Alumni Homecoming 2024"></div>
+                    <div class="news-body">
+                        <span class="news-date">May 6, 2024</span>
+                        <h3>Alumni Homecoming 2024</h3>
+                        <p>A night filled with nostalgia, laughter, and dancing as Lasallian alumni reunite once more.
+                        </p>
+                        <a href="https://www.facebook.com/dlsjbc" target="_blank" rel="noopener" class="read-more">Read
+                            more on Facebook →</a>
+                    </div>
+                </div>
+                <div class="news-card">
+                    <div class="img-zoom"><img
+                            src="https://static.wixstatic.com/media/c19ea6_12cb0406f4ca4b73ac1cd5632a4a8f0c~mv2.jpg"
+                            alt="Pre-enrollment"></div>
+                    <div class="news-body">
+                        <span class="news-date">April 2, 2024</span>
+                        <h3>Pre-Enrollment Opens at DLSJBC</h3>
+                        <p>Prepare to soar — pre-enrollment is now open. Choose your path and embrace your future.</p>
+                        <a href="https://www.facebook.com/dlsjbc" target="_blank" rel="noopener" class="read-more">Read
+                            more on Facebook →</a>
+                    </div>
+                </div>
+                <div class="news-card">
+                    <div class="img-zoom"><img
+                            src="https://static.wixstatic.com/media/c19ea6_fb8c347bbf59408790e400c1043420ae~mv2.jpg"
+                            alt="Science teachers benchmarking"></div>
+                    <div class="news-body">
+                        <span class="news-date">March 13, 2024</span>
+                        <h3>Committed to Excellence in Science Education</h3>
+                        <p>DLSJBC science teachers joined a benchmarking activity at CSU to bring best practices back to
+                            the classroom.</p>
+                        <a href="https://www.facebook.com/dlsjbc" target="_blank" rel="noopener" class="read-more">Read
+                            more on Facebook →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="site-footer">
+        <svg class="footer-watermark" viewBox="0 0 100 120">
+            <path d="M50 4 L94 20 V56 C94 90 74 108 50 116 C26 108 6 90 6 56 V20 Z" />
+        </svg>
+        <div class="footer-inner">
+            <div class="footer-col footer-brand">
+                <img src="https://static.wixstatic.com/media/bd91d4_584584173a0c444ab9255b9313caa658~mv2.png"
+                    alt="DLSJBC Logo" class="footer-logo">
+                <p class="footer-name">De La Salle John Bosco College</p>
+                <p>De La Salle Drive, Mangagoy, Bislig City, Surigao del Sur, Philippines</p>
+                <div class="icon-group footer-icons">
+                    <a href="mailto:info@dlsjbc.edu.ph" class="icon-btn" aria-label="Email DLSJBC">
+                        <svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <rect x="3" y="5" width="18" height="14" rx="2" />
+                            <path d="M3 7l9 6 9-6" />
+                        </svg>
+                    </a>
+                    <a href="https://www.facebook.com/dlsjbc" target="_blank" rel="noopener" class="icon-btn"
+                        aria-label="DLSJBC Facebook">
+                        <svg viewBox="0 0 24 24" width="17" height="17" fill="currentColor">
+                            <path
+                                d="M22 12.06C22 6.51 17.52 2 12 2S2 6.51 2 12.06c0 5 3.66 9.16 8.44 9.94v-7.03H7.9v-2.91h2.54V9.85c0-2.5 1.49-3.89 3.77-3.89 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56v1.88h2.78l-.44 2.91h-2.34V22c4.78-.78 8.44-4.94 8.44-9.94z" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <a href="#home" class="tab-link" data-tab="home">Home</a>
+                <a href="#admissions" class="tab-link" data-tab="admissions">Admissions</a>
+                <a href="#about" class="tab-link" data-tab="about">About</a>
+                <a href="#contact" class="tab-link" data-tab="contact">Contact</a>
+                <a href="#articles" class="tab-link" data-tab="articles">Articles</a>
+            </div>
+
+            <div class="footer-col">
+                <h4>Contact</h4>
+                <a href="mailto:info@dlsjbc.edu.ph">info@dlsjbc.edu.ph</a>
+                <a href="tel:+63868533415">+63 86 853 3415</a>
+                <a href="https://www.facebook.com/dlsjbc" target="_blank" rel="noopener">facebook.com/dlsjbc</a>
+            </div>
+
+            <div class="footer-col">
+                <h4>Ready to Enroll?</h4>
+                <p>Take the first step toward your Lasallian journey.</p>
+                <a href="#admissions" class="btn btn-light tab-link" data-tab="admissions">Enroll Now</a>
+            </div>
+        </div>
+
+        <p class="copyright">© 2024 De La Salle John Bosco College. All rights reserved.</p>
+    </footer>
+
+    <script>
+        /* LOADING SCREEN */
+        window.addEventListener('load', () => {
+            setTimeout(() => document.getElementById('loader').classList.add('done'), 900);
+        });
+
+        /* TAB SWITCHING */
+        const tabLinks = document.querySelectorAll('.tab-link');
+        const tabContents = document.querySelectorAll('.tab-content');
+
+        function activateTab(tabName) {
+            tabContents.forEach(sec => sec.classList.remove('active'));
+            document.getElementById(tabName).classList.add('active');
+            document.querySelectorAll('.tab-link').forEach(link => {
+                link.classList.toggle('active', link.dataset.tab === tabName);
+            });
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+        tabLinks.forEach(link => {
+            link.addEventListener('click', function (e) {
+                e.preventDefault();
+                activateTab(this.dataset.tab);
+            });
+        });
+
+        /* DARK MODE TOGGLE */
+        const themeToggle = document.getElementById('themeToggle');
+        const toggleKnob = themeToggle.querySelector('.toggle-knob');
+        themeToggle.addEventListener('click', () => {
+            const isDark = document.body.getAttribute('data-theme') === 'dark';
+            document.body.setAttribute('data-theme', isDark ? 'light' : 'dark');
+            toggleKnob.textContent = isDark ? '🌙' : '☀️';
+        });
+
+        /* HEADER SHRINK + SCROLL PROGRESS BAR */
+        const progressBar = document.getElementById('scrollProgress');
+        window.addEventListener('scroll', () => {
+            document.querySelector('.site-header').classList.toggle('scrolled', window.scrollY > 20);
+            const scrollTop = window.scrollY;
+            const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+            progressBar.style.width = (docHeight > 0 ? (scrollTop / docHeight) * 100 : 0) + '%';
+        });
+    </script>
+
+</body>
+
+</html>
